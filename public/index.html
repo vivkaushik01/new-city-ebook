@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title id="page-title">Loading…</title>
+<meta id="meta-description" name="description" content="">
+
+<!-- Social share image — see IMAGE_PROMPTS.md: og-image.jpg -->
+<meta id="og-title" property="og:title" content="">
+<meta id="og-description" property="og:description" content="">
+<meta property="og:image" content="/images/og-image.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,500&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<!-- ==================== ANNOUNCEMENT / COUNTDOWN BAR ==================== -->
+<div id="countdown-bar" class="countdown-bar" hidden>
+  <span id="countdown-label"></span>
+  <span class="countdown-timer">
+    <span id="cd-days">00</span>d
+    <span id="cd-hours">00</span>h
+    <span id="cd-mins">00</span>m
+    <span id="cd-secs">00</span>s
+  </span>
+</div>
+
+<!-- ==================== HEADER ==================== -->
+<header class="site-header">
+  <div class="container header-inner">
+    <span class="logo" id="logo-title">Loading…</span>
+    <a href="#buy" class="btn btn-primary btn-small">Get the Book</a>
+  </div>
+</header>
+
+<!-- ==================== HERO ==================== -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow" id="hero-eyebrow"></span>
+      <h1 id="hero-headline"></h1>
+      <p class="hero-sub" id="hero-subtitle">
+        125+ Foolproof Recipes, Meal Plans & Real-Life Techniques for Everyday Gluten-Free Cooking and Baking
+      </p>
+      <p class="hero-author">By <strong id="author-name-hero">Sarah Mitchell</strong> — <span id="author-title-hero">Celiac Advocate &amp; Gluten-Free Culinary Educator</span></p>
+
+      <div class="hero-trust-row">
+        <span>✅ Instant Digital Download</span>
+        <span>✅ 125+ Recipes</span>
+        <span>✅ 13 Printable Toolkits</span>
+      </div>
+
+      <div class="price-block">
+        <span id="price-original" class="price-original"></span>
+        <span id="price-sale" class="price-sale"></span>
+        <span id="discount-badge" class="discount-badge"></span>
+      </div>
+
+      <a href="#buy" class="btn btn-primary btn-large">Get Instant Access →</a>
+      <p class="microcopy">Secure checkout via PayPal · Delivered instantly · One-time payment</p>
+    </div>
+
+    <div class="hero-image">
+      <!-- IMAGE: hero-book-mockup.png — see IMAGE_PROMPTS.md -->
+      <img src="/images/hero-book-mockup.png" id="hero-mockup-img" alt="Book cover mockup" onerror="this.classList.add('img-fallback')">
+    </div>
+  </div>
+</section>
+
+<!-- ==================== PROBLEM / EMPATHY ==================== -->
+<section class="section problem-section">
+  <div class="container narrow">
+    <h2 id="problem-headline"></h2>
+    <p id="problem-paragraph-1"></p>
+    <p id="problem-paragraph-2"></p>
+  </div>
+</section>
+
+<!-- ==================== WHAT YOU GET ==================== -->
+<section class="section" id="whats-inside">
+  <div class="container">
+    <h2 class="section-title" id="whats-inside-title"></h2>
+    <p class="section-subtitle" id="contents-intro"></p>
+    <div class="feature-grid" id="deliverables-grid">
+      <!-- populated by main.js from config.DELIVERABLES -->
+    </div>
+  </div>
+</section>
+
+<!-- ==================== BOOK CONTENTS PREVIEW (informed first-read decision) ==================== -->
+<section class="section contents-section">
+  <div class="container two-col">
+    <div>
+      <h2 class="section-title left">What's Actually Inside</h2>
+      <p>20 chapters across two parts, plus a 13-tool printable appendix — built to take you from "what can I even eat"
+        to genuinely confident, without wading through 400 pages to find it.</p>
+      <ul class="contents-list" id="contents-list">
+        <!-- populated by main.js from config.CONTENTS_LIST -->
+      </ul>
+      <a href="#buy" class="btn btn-primary">Get Instant Access →</a>
+    </div>
+    <div class="contents-images">
+      <!-- IMAGE: toolkit-preview.jpg — see IMAGE_PROMPTS.md -->
+      <img src="/images/toolkit-preview.jpg" alt="Printable toolkit preview" onerror="this.classList.add('img-fallback')">
+      <!-- IMAGE: recipe-sample-1.jpg — see IMAGE_PROMPTS.md -->
+      <img src="/images/recipe-sample-1.jpg" alt="Sample recipe page" onerror="this.classList.add('img-fallback')">
+    </div>
+  </div>
+</section>
+
+<!-- ==================== AUTHOR / UGC-STYLE VIDEO ==================== -->
+<section class="section author-section">
+  <div class="container two-col reverse">
+    <div class="author-video-wrap">
+      <!-- VIDEO: author-welcome.mp4 — script + generation prompt in VIDEO_PROMPT.md -->
+      <video id="ugc-video" controls poster="/images/author-photo.jpg">
+        <source src="/videos/author-welcome.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div>
+      <h2 class="section-title left">A Note From <span id="author-name-section">Sarah Mitchell</span></h2>
+      <p id="author-quote"></p>
+      <p class="author-signoff">— <span id="author-name-section2">Sarah Mitchell</span>, <span id="author-title-section">Celiac Advocate &amp; Gluten-Free Culinary Educator</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== REVIEWS ====================
+     NOTE: Replace placeholder content in config.js → REVIEWS with genuine
+     reader/beta feedback before launch. See README.md. -->
+<section class="section reviews-section">
+  <div class="container">
+    <h2 class="section-title">What Early Readers Are Saying</h2>
+    <div class="reviews-grid" id="reviews-grid">
+      <!-- populated by main.js from config.REVIEWS -->
+    </div>
+  </div>
+</section>
+
+<!-- ==================== FAQ ==================== -->
+<section class="section faq-section">
+  <div class="container narrow">
+    <h2 class="section-title">Frequently Asked Questions</h2>
+    <div id="faq-list" class="faq-list">
+      <!-- populated by main.js from config.FAQS -->
+    </div>
+  </div>
+</section>
+
+<!-- ==================== FINAL CTA / PAYMENT ==================== -->
+<section class="section buy-section" id="buy">
+  <div class="container narrow buy-card">
+    <h2 id="buy-heading"></h2>
+    <p class="section-subtitle">Instant digital download. Read tonight.</p>
+
+    <div class="price-block center">
+      <span id="price-original-2" class="price-original"></span>
+      <span id="price-sale-2" class="price-sale"></span>
+      <span id="discount-badge-2" class="discount-badge"></span>
+    </div>
+
+    <form id="buyer-form" class="buyer-form">
+      <label for="buyerName">Name</label>
+      <input type="text" id="buyerName" name="buyerName" required placeholder="Your name">
+      <label for="buyerEmail">Email — your download link is sent to this address</label>
+      <input type="email" id="buyerEmail" name="buyerEmail" required placeholder="you@example.com">
+    </form>
+
+    <button id="razorpay-buy-btn" class="btn btn-primary btn-large" type="button" disabled>Buy Now — Pay Securely</button>
+    <p id="payment-status" class="payment-status" hidden></p>
+
+    <p class="microcopy">🔒 Secure payment via Razorpay (Cards · UPI · Netbanking · Wallets) · Instant access · No subscription</p>
+  </div>
+</section>
+
+<!-- ==================== FOOTER / STATUTORY ==================== -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <h3 id="footer-title"></h3>
+      <p>By <span id="author-name-footer">Sarah Mitchell</span></p>
+      <p>Questions? <a id="support-email-link" href="mailto:support@yourdomain.com">support@yourdomain.com</a></p>
+    </div>
+    <div class="footer-legal">
+      <h4>Policies</h4>
+      <p><strong>No Refunds / All Sales Final:</strong> This is an instant-access digital product. Because the file is
+        delivered immediately upon payment, all sales are final and non-refundable once the download link has been
+        issued, except where required by applicable law.</p>
+      <p id="disclaimer-line"><strong>Disclaimer:</strong> <span id="disclaimer-text"></span></p>
+      <p><strong>Privacy:</strong> Your name and email are collected solely to deliver your purchase and, if you opt
+        in, to send occasional updates from the author. We do not sell your information to third parties.</p>
+      <p><strong>Copyright:</strong> © <span id="copyright-year"></span> <span id="company-name-footer">Sarah Mitchell</span>.
+        All rights reserved. No part of this publication may be reproduced or distributed without prior written
+        permission, except for brief quotations in critical reviews.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="/js/main.js"></script>
+</body>
+</html>

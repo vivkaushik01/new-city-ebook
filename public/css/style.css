@@ -1,0 +1,179 @@
+/* ==========================================================================
+   THE GLUTEN-FREE KITCHEN — Landing Page Styles
+   Palette matches the book's interior design (terracotta / warm cream)
+   ========================================================================== */
+
+:root {
+  --cream: #FBF6EE;
+  --cream-deep: #F4EEE6;
+  --accent: #8A5A34;
+  --accent-dark: #6E4626;
+  --text-dark: #2B2420;
+  --muted: #6B6259;
+  --white: #FFFFFF;
+  --success: #3C7A4B;
+  --shadow: 0 8px 30px rgba(43, 36, 32, 0.08);
+  --radius: 14px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-dark);
+  background: var(--cream);
+  line-height: 1.65;
+}
+
+h1, h2, h3, h4 { font-family: 'Lora', serif; margin: 0 0 16px; line-height: 1.25; }
+p { margin: 0 0 16px; }
+a { color: var(--accent); }
+
+.container { max-width: 1140px; margin: 0 auto; padding: 0 24px; }
+.container.narrow { max-width: 760px; }
+.section { padding: 80px 0; }
+.section-title { font-size: 2rem; text-align: center; }
+.section-title.left { text-align: left; }
+.section-subtitle { text-align: center; color: var(--muted); font-size: 1.1rem; margin-top: -10px; margin-bottom: 40px; }
+
+/* ---------- buttons ---------- */
+.btn {
+  display: inline-block;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 16px 32px;
+  transition: transform .15s ease, box-shadow .15s ease;
+  cursor: pointer;
+  border: none;
+}
+.btn-primary { background: var(--accent); color: var(--white); }
+.btn-primary:hover { background: var(--accent-dark); transform: translateY(-2px); box-shadow: var(--shadow); }
+.btn-large { font-size: 1.15rem; padding: 18px 40px; }
+.btn:disabled { opacity: .55; cursor: not-allowed; transform: none !important; }
+#razorpay-buy-btn { width: 100%; border: none; cursor: pointer; margin-top: 8px; }
+.btn-small { padding: 10px 20px; font-size: .9rem; }
+
+/* ---------- countdown bar ---------- */
+.countdown-bar {
+  background: var(--accent-dark);
+  color: var(--white);
+  text-align: center;
+  padding: 10px 16px;
+  font-size: .9rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.countdown-timer span { display: inline-block; min-width: 26px; }
+
+/* ---------- header ---------- */
+.site-header { background: var(--cream); border-bottom: 1px solid var(--cream-deep); position: sticky; top: 0; z-index: 50; }
+.header-inner { display: flex; justify-content: space-between; align-items: center; padding: 16px 24px; }
+.logo { font-family: 'Lora', serif; font-weight: 700; font-size: 1.2rem; }
+
+/* ---------- hero ---------- */
+.hero { padding: 70px 0; background: linear-gradient(180deg, var(--cream) 0%, var(--cream-deep) 100%); }
+.hero-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 56px; align-items: center; }
+.eyebrow { display: inline-block; color: var(--accent-dark); font-weight: 600; font-size: .8rem; letter-spacing: 1.5px; margin-bottom: 14px; }
+.hero h1 { font-size: 2.6rem; }
+.hero-sub { font-size: 1.15rem; color: var(--muted); font-style: italic; }
+.hero-author { font-size: .95rem; color: var(--muted); margin-bottom: 20px; }
+.hero-trust-row { display: flex; gap: 18px; flex-wrap: wrap; font-size: .88rem; font-weight: 500; margin-bottom: 22px; }
+
+.price-block { display: flex; align-items: baseline; gap: 12px; margin-bottom: 22px; flex-wrap: wrap; }
+.price-block.center { justify-content: center; }
+.price-original { text-decoration: line-through; color: var(--muted); font-size: 1.2rem; }
+.price-sale { font-family: 'Lora', serif; font-weight: 700; font-size: 2.4rem; color: var(--accent-dark); }
+.discount-badge { background: var(--accent); color: var(--white); padding: 4px 12px; border-radius: 20px; font-size: .78rem; font-weight: 600; }
+.microcopy { font-size: .82rem; color: var(--muted); margin-top: 12px; }
+
+.hero-image img { width: 100%; border-radius: var(--radius); box-shadow: var(--shadow); }
+.img-fallback {
+  background: repeating-linear-gradient(45deg, var(--cream-deep), var(--cream-deep) 10px, var(--cream) 10px, var(--cream) 20px);
+  min-height: 320px; display: block;
+}
+
+/* ---------- problem/empathy ---------- */
+.problem-section { text-align: center; background: var(--white); }
+.problem-section h2 { font-size: 1.7rem; }
+
+/* ---------- feature grid ---------- */
+.feature-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-top: 20px; }
+.feature-card { background: var(--white); border: 1px solid var(--cream-deep); border-radius: var(--radius); padding: 30px 26px; text-align: center; box-shadow: var(--shadow); }
+.feature-card .icon { font-size: 2.2rem; margin-bottom: 12px; display: block; }
+.feature-card h3 { font-size: 1.1rem; margin-bottom: 8px; }
+.feature-card p { color: var(--muted); font-size: .92rem; margin: 0; }
+
+/* ---------- two-col sections ---------- */
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
+.two-col.reverse { direction: rtl; }
+.two-col.reverse > * { direction: ltr; }
+.contents-list { padding-left: 20px; }
+.contents-list li { margin-bottom: 16px; }
+.contents-images { display: flex; flex-direction: column; gap: 20px; }
+.contents-images img { width: 100%; border-radius: var(--radius); box-shadow: var(--shadow); }
+
+.author-section { background: var(--white); }
+.author-video-wrap video { width: 100%; border-radius: var(--radius); box-shadow: var(--shadow); background: #000; }
+.author-signoff { color: var(--muted); font-style: italic; }
+
+/* ---------- reviews ---------- */
+.reviews-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; margin-top: 10px; }
+.review-card { background: var(--white); border: 1px solid var(--cream-deep); border-radius: var(--radius); padding: 26px; box-shadow: var(--shadow); }
+.review-stars { color: var(--accent); letter-spacing: 2px; margin-bottom: 10px; }
+.review-quote { font-style: italic; margin-bottom: 14px; }
+.review-name { font-weight: 600; font-size: .92rem; }
+.review-detail { color: var(--muted); font-size: .82rem; }
+
+/* ---------- FAQ ---------- */
+.faq-section { background: var(--white); }
+.faq-item { border-bottom: 1px solid var(--cream-deep); }
+.faq-question {
+  width: 100%; text-align: left; background: none; border: none; cursor: pointer;
+  font-family: 'Lora', serif; font-size: 1.05rem; font-weight: 600; color: var(--text-dark);
+  padding: 20px 0; display: flex; justify-content: space-between; align-items: center;
+}
+.faq-answer { max-height: 0; overflow: hidden; transition: max-height .25s ease; color: var(--muted); }
+.faq-answer p { padding-bottom: 18px; }
+.faq-item.open .faq-answer { max-height: 300px; }
+.faq-toggle-icon { transition: transform .2s ease; }
+.faq-item.open .faq-toggle-icon { transform: rotate(45deg); }
+
+/* ---------- buy section ---------- */
+.buy-section { background: var(--cream-deep); }
+.buy-card { background: var(--white); border-radius: var(--radius); box-shadow: var(--shadow); padding: 50px 40px; text-align: center; }
+.buyer-form { text-align: left; max-width: 420px; margin: 0 auto 24px; }
+.buyer-form label { display: block; font-size: .85rem; font-weight: 600; margin: 14px 0 6px; }
+.buyer-form input {
+  width: 100%; padding: 12px 14px; border: 1px solid var(--cream-deep); border-radius: 8px;
+  font-family: 'Poppins', sans-serif; font-size: .95rem;
+}
+#paypal-button-container { max-width: 420px; margin: 0 auto; }
+.payment-status { margin-top: 16px; font-weight: 600; }
+.payment-status.error { color: #B3261E; }
+.payment-status.success { color: var(--success); }
+
+/* ---------- footer ---------- */
+.site-footer { background: var(--text-dark); color: var(--cream-deep); padding: 60px 0 40px; }
+.footer-grid { display: grid; grid-template-columns: 1fr 2fr; gap: 50px; }
+.site-footer h3, .site-footer h4 { color: var(--white); }
+.site-footer a { color: #E8C9A8; }
+.footer-legal p { font-size: .82rem; color: #C9C0B4; margin-bottom: 14px; }
+
+/* ---------- responsive ---------- */
+@media (max-width: 860px) {
+  .hero-grid, .two-col, .footer-grid { grid-template-columns: 1fr; }
+  .two-col.reverse { direction: ltr; }
+  .feature-grid, .reviews-grid { grid-template-columns: 1fr 1fr; }
+  .hero h1 { font-size: 2rem; }
+}
+@media (max-width: 560px) {
+  .feature-grid, .reviews-grid { grid-template-columns: 1fr; }
+  .section { padding: 56px 0; }
+  .buy-card { padding: 34px 22px; }
+}
