@@ -20,11 +20,11 @@ module.exports = {
   // ---------- Book & brand ----------
   BOOK_TITLE: "The New City Kitchen",
   BOOK_SUBTITLE: "125+ Budget Recipes, Smart Buying Charts & a Zero-Waste Kitchen System for Students & Young Professionals",
-  AUTHOR_NAME: "Madhurima Singh",
+  AUTHOR_NAME: "Sonia Kaushik",
   AUTHOR_TITLE: "Author — A Mother's Tested Kitchen System, Proven Over Six Years", // [CONFIRM] wording
   SITE_URL: "https://your-app-name.onrender.com",     // <-- set after first deploy
   SUPPORT_EMAIL: "support@yourdomain.com",              // [CONFIRM] <-- shown in footer & FAQs
-  COMPANY_NAME: "Madhurima Singh",                       // [CONFIRM] <-- for copyright line
+  COMPANY_NAME: "Sonia Kaushik",                       // [CONFIRM] <-- for copyright line
 
   // ---------- Pricing ----------
   // [CONFIRM] Research note: for a students+young-professionals audience in
