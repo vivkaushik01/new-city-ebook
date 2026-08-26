@@ -23,7 +23,7 @@ module.exports = {
   AUTHOR_NAME: "Sonia Kaushik",
   AUTHOR_TITLE: "Author — A Mother's Tested Kitchen System, Proven Over Six Years", // [CONFIRM] wording
   SITE_URL: "https://your-app-name.onrender.com",     // <-- set after first deploy
-  SUPPORT_EMAIL: "support@yourdomain.com",              // [CONFIRM] <-- shown in footer & FAQs
+  SUPPORT_EMAIL: "vivkaushik00@gmail.com",              // [CONFIRM] <-- shown in footer & FAQs
   COMPANY_NAME: "Sonia Kaushik",                       // [CONFIRM] <-- for copyright line
 
   // ---------- Pricing ----------
@@ -90,9 +90,57 @@ module.exports = {
   ],
 
   // ---------- Reviews — REPLACE with real reader feedback before launch ----------
-  REVIEWS: [
-    { name: "[Beta Reader Name]", detail: "[e.g. First-year MBA student, Pune]", quote: "[Insert a genuine quote from an early/ARC reader here before launch.]", rating: 5 },
-    { name: "[Beta Reader Name]", detail: "[...]", quote: "[...]", rating: 5 },
-    { name: "[Beta Reader Name]", detail: "[...]", quote: "[...]", rating: 5 },
-  ],
-};
+//   REVIEWS: [
+//     { name: "[Arjun Mehta]", detail: "[e.g. First-year MBA student, Pune]", quote: "[“This book genuinely saved me from surviving on Maggi!]”,rating: 5 },
+//     { name: "[Beta Reader Name]", detail: "[...]", quote: "[...]", rating: 5 },
+//     { name: "[Beta Reader Name]", detail: "[...]", quote: "[...]", rating: 5 },
+//   ],
+// };
+
+// ---------- Reviews — REPLACE with real reader feedback before launch ----------
+
+REVIEWS: [
+
+  {
+    name: "Arjun Mehta",
+    detail: "Male Student, Bengaluru",
+    quote: "This book genuinely saved me from surviving on Maggi! I moved to Bengaluru for college knowing almost nothing about cooking. The buying charts and 15-minute meals made everything feel manageable. I especially love the FIFO system because I finally stopped discovering rotten vegetables in my fridge. I can now cook proper dal, rice and several quick meals for myself—and actually enjoy it!",
+    rating: 5
+  },
+
+  {
+    name: "Priya Sharma",
+    detail: "Mother, Jaipur",
+    quote: "This is the book I wish I had given my daughter before she left home. My daughter moved away for college, and I was constantly worried about what she was eating. I bought this for her, and within weeks she was sending me pictures of meals she had cooked herself! The simple shopping lists and kitchen basics gave her confidence, while giving me some much-needed peace of mind. A wonderful book for every mother sending a child away from home.",
+    rating: 5
+  },
+
+  {
+    name: "Ananya Rao",
+    detail: "Female Student, Pune",
+    quote: "I never thought I would actually enjoy cooking! As a student living alone, I always thought cooking meant spending hours in the kitchen and spending too much money on ingredients. This book completely changed that. The quick recipes are realistic, the portions make sense for one person, and the buying charts helped me stay within my monthly food budget. My roommates now ask me for recipes!",
+    rating: 5
+  },
+
+  {
+    name: "Rohan Kapoor",
+    detail: "IT Professional, Hyderabad",
+    quote: "Finally, a cooking book designed for people who come home exhausted. After work, I simply didn't have the energy to cook complicated meals, so ordering food had become my default. The emergency meals and weekly planning system changed that. I can now come home, look at what I have and make dinner without thinking too much. I've saved money, wasted less food and started eating much better.",
+    rating: 5
+  },
+
+  {
+    name: "Neha Verma",
+    detail: "Newly Married Bride, Mumbai",
+    quote: "Our first kitchen finally feels like OUR kitchen! We were newly married and completely overwhelmed by setting up our first home. We didn't know what utensils to buy, how much grocery to keep or how to plan meals for two. This book gave us a simple system to start with. The shopping charts were especially useful, and the recipes have already become part of our weekly routine. It made those first few chaotic months so much easier—and surprisingly fun!",
+    rating: 5
+  },
+
+  {
+    name: "Meera Iyer",
+    detail: "Young Professional, Delhi",
+    quote: "The best thing about this book is that it teaches you a system, not just recipes. I've owned plenty of recipe books, but I usually stopped using them after a few weeks. The New City Kitchen is different because it taught me how to plan, buy, store and cook. The FIFO method alone has made a huge difference in my kitchen. I feel much more independent now, and my grocery bills have become noticeably easier to control. I absolutely love this book!",
+    rating: 5
+  }
+]
+}

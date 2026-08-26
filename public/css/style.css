@@ -119,7 +119,7 @@ a { color: var(--accent); }
 .contents-images img { width: 100%; border-radius: var(--radius); box-shadow: var(--shadow); }
 
 .author-section { background: var(--white); }
-.author-video-wrap video { width: 100%; border-radius: var(--radius); box-shadow: var(--shadow); background: #000; }
+.author-video-wrap video { width: 100%; border-radius: var(--radius); box-shadow: var(--shadow); background: #000; height: 100%; }
 .author-signoff { color: var(--muted); font-style: italic; }
 
 /* ---------- reviews ---------- */
