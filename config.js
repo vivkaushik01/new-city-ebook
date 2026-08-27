@@ -14,7 +14,7 @@
 // it's only used to word the FAQ answer, so keep the two in sync by hand.
 // ============================================================================
 
-const DOWNLOAD_LINK_HOURS = 48;
+const DOWNLOAD_LINK_HOURS = 0.25;
 
 module.exports = {
   // ---------- Book & brand ----------
@@ -86,7 +86,7 @@ module.exports = {
     { q: "I've never cooked before — is this really for beginners?", a: "Yes. It's written for exactly that first week in a new city, with charts and step-by-step systems instead of assuming you already know your way around a kitchen." },
     { q: "Does this include a refund or return policy?", a: "Because this is an instant-access digital product, all sales are final once the download link has been issued. Please see the full policy in the footer before purchasing." },
     { q: "Is this specific to Indian kitchens and ingredients?", a: "Yes — the pantry list, buying charts, and recipes are built around what's actually available in Indian grocery stores and kitchens, not adapted from a Western cookbook." },
-    { q: "How is my download link protected?", a: `Your download link is personal to your order, works once, and expires ${DOWNLOAD_LINK_HOURS} hours after purchase, so please save the file to your device as soon as you download it.` },
+    { q: "How is my download link protected?", a: `Your download link is personal to your order, works once, and expires 15 mins after purchase, so please save the file to your device as soon as you download it.` },
   ],
 
   // ---------- Reviews — REPLACE with real reader feedback before launch ----------
