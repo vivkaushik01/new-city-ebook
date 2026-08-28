@@ -34,7 +34,7 @@ module.exports = {
   // reconsider if you learn your buyers skew heavily student vs. professional.
   CURRENCY: "INR",
   ORIGINAL_PRICE: 399,          // [CONFIRM] shown struck-through — whole rupees
-  SALE_PRICE: 199,               // [CONFIRM] the real charge amount
+  SALE_PRICE: 149,               // [CONFIRM] the real charge amount
   DISCOUNT_ACTIVE: true,
   DISCOUNT_LABEL: "Launch Week Price — 50% Off",
 
