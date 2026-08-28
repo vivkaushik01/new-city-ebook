@@ -33,7 +33,7 @@ module.exports = {
   // guide). Set below to split the difference for the dual audience —
   // reconsider if you learn your buyers skew heavily student vs. professional.
   CURRENCY: "INR",
-  ORIGINAL_PRICE: 399,          // [CONFIRM] shown struck-through — whole rupees
+  ORIGINAL_PRICE: 300,          // [CONFIRM] shown struck-through — whole rupees
   SALE_PRICE: 149,               // [CONFIRM] the real charge amount
   DISCOUNT_ACTIVE: true,
   DISCOUNT_LABEL: "Launch Week Price — 50% Off",
