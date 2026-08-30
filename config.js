@@ -14,7 +14,7 @@
 // it's only used to word the FAQ answer, so keep the two in sync by hand.
 // ============================================================================
 
-const DOWNLOAD_LINK_HOURS = 0.25;
+const DOWNLOAD_LINK_HOURS = 48;
 
 module.exports = {
   // ---------- Book & brand ----------
@@ -53,16 +53,18 @@ module.exports = {
   ],
 
   // ---------- Hero section ----------
-  HERO_EYEBROW: "FOR STUDENTS & YOUNG PROFESSIONALS COOKING FOR THE FIRST TIME",
-  HERO_HEADLINE: "A Kitchen System That Finally Feels Like Home.",
+  
+  HERO_HEADLINE: 'For People Who Are Too <span class="hero-highlight">Tired</span> To Cook — And Too Guilty To Order In Again',
+  HERO_EYEBROW: "You Don't Need to Learn to Cook. You Need to Stop Deciding What to Eat.",
 
   // ---------- "Problem / Empathy" section ----------
-  PROBLEM_HEADLINE: "You Moved Out. Your Fridge Didn't Come With Instructions.",
-  PROBLEM_PARAGRAPH_1: "New city, new job or college, and a kitchen you don't know how to run. You over-buy vegetables that rot by Thursday, under-buy dal, and end up ordering in — again — because cooking after a long day feels like one more exam you didn't study for.",
-  PROBLEM_PARAGRAPH_2: "It doesn't have to be this way. This book turns six real years of one mother's tested system — buying charts, a FIFO inventory method, and 125+ genuinely simple recipes — into a system you can run from week one.",
+  PROBLEM_HEADLINE: "It's 9pm. You're exhausted. The fridge has almost nothing in it. And you already know exactly how this ends.",
+  PROBLEM_PARAGRAPH_1: "You're not lazy, and you're not bad at cooking — you're just out of decisions for the day. So you order in again, tell yourself you'll do better tomorrow, and quietly feel a little worse about the money, the oil, the same guilty cycle repeating.",
+  PROBLEM_PARAGRAPH_2: "This book isn't a system to learn. It's the opposite — a way to always know exactly what to make, in under 15 minutes, from whatever's already sitting in your kitchen. No decisions. No planning. No guilt.",
+
 
   // ---------- "Everything Inside" section intro ----------
-  CONTENTS_INTRO: "Five parts, front to back: getting your kitchen and pantry sorted, a buying-and-inventory system that stops waste before it starts, everyday cooking that's actually simple, real skills like rice-roti-dal, and how to live the system long-term — budgeting, roommates, and festivals away from home.",
+  CONTENTS_INTRO: "Open the book, look at what you have, and cook. That's the whole idea.",
 
   // ---------- Author quote ----------
   AUTHOR_QUOTE: "Six years ago I stood in a small rented room in Bengaluru with a brand-new pressure cooker still in its box and a son who didn't know the difference between a kadhai and a tawa. This book is the system we built that week — tested, refined, and proven over six real years.", // [CONFIRM] pulled from manuscript's opening
@@ -86,7 +88,8 @@ module.exports = {
     { q: "I've never cooked before — is this really for beginners?", a: "Yes. It's written for exactly that first week in a new city, with charts and step-by-step systems instead of assuming you already know your way around a kitchen." },
     { q: "Does this include a refund or return policy?", a: "Because this is an instant-access digital product, all sales are final once the download link has been issued. Please see the full policy in the footer before purchasing." },
     { q: "Is this specific to Indian kitchens and ingredients?", a: "Yes — the pantry list, buying charts, and recipes are built around what's actually available in Indian grocery stores and kitchens, not adapted from a Western cookbook." },
-    { q: "How is my download link protected?", a: `Your download link is personal to your order, works once, and expires 15 mins after purchase, so please save the file to your device as soon as you download it.` },
+    { q: "I genuinely hate cooking and have zero motivation most nights. Will this actually work for me?", a: "This book was written for exactly that night — not the days you feel like cooking, but the days you don't. Every recipe is built around minimum effort and minimum ingredients, because that's when you actually need help most." },
+    { q: "How is my download link protected?", a: `Your download link is personal to your order, works once, and expires ${DOWNLOAD_LINK_HOURS} hours after purchase, so please save the file to your device as soon as you download it.` },
   ],
 
   // ---------- Reviews — REPLACE with real reader feedback before launch ----------

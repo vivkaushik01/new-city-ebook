@@ -1,6 +1,6 @@
 /* ==========================================================================
-   THE GLUTEN-FREE KITCHEN — Landing Page Styles
-   Palette matches the book's interior design (terracotta / warm cream)
+   THE NEW CITY KITCHEN — Landing Page Styles
+   Palette: warm cream / terracotta-brown
    ========================================================================== */
 
 :root {
@@ -17,6 +17,10 @@
 }
 
 * { box-sizing: border-box; }
+
+.hero-highlight {
+  color: var(--accent);
+}
 
 body {
   margin: 0;
@@ -119,7 +123,7 @@ a { color: var(--accent); }
 .contents-images img { width: 100%; border-radius: var(--radius); box-shadow: var(--shadow); }
 
 .author-section { background: var(--white); }
-.author-video-wrap video { width: 100%; border-radius: var(--radius); box-shadow: var(--shadow); background: #000; height: 100%; }
+.author-video-wrap video { width: 100%; border-radius: var(--radius); box-shadow: var(--shadow); background: #000; }
 .author-signoff { color: var(--muted); font-style: italic; }
 
 /* ---------- reviews ---------- */

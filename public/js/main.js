@@ -23,14 +23,16 @@ async function init() {
 // ---------- basic text fields (author name/title appear in several spots) ----------
 function renderText() {
   document.title = `${CONFIG.BOOK_TITLE} — ${CONFIG.BOOK_SUBTITLE}`;
-  document.getElementById("page-title").textContent = document.title;
+  document.getElementById("page-title").innerHTML = document.title;
   document.getElementById("meta-description").setAttribute("content", CONFIG.BOOK_SUBTITLE);
   document.getElementById("og-title").setAttribute("content", CONFIG.BOOK_TITLE);
   document.getElementById("og-description").setAttribute("content", CONFIG.BOOK_SUBTITLE);
 
   setAll("#logo-title, #footer-title", CONFIG.BOOK_TITLE);
   setAll("#hero-eyebrow", CONFIG.HERO_EYEBROW);
-  setAll("#hero-headline", CONFIG.HERO_HEADLINE);
+  //setAll("#hero-headline", CONFIG.HERO_HEADLINE);
+  //HERO HEADLINE — uses innerHTML so the highlighted word renders as HTML 
+  document.getElementById("hero-headline").innerHTML = CONFIG.HERO_HEADLINE;
   setAll("#hero-subtitle", CONFIG.BOOK_SUBTITLE);
   setAll("#author-name-hero, #author-name-section, #author-name-section2, #author-name-footer", CONFIG.AUTHOR_NAME);
   setAll("#author-title-hero, #author-title-section", CONFIG.AUTHOR_TITLE);
